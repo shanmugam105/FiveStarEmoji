@@ -8,7 +8,7 @@
 import UIKit
 
 public class FiveStarEmoji: UIView {
-    public var starEmoji: [UIImage]! {
+    public var starEmoji: [UIImage]? {
         didSet {
             configureView()
         }
@@ -36,7 +36,7 @@ public class FiveStarEmoji: UIView {
                                               starImageView5 ]
     
     private lazy var baseStackView: UIStackView = {
-        let stars: [ UIImageView ] = Array(self.stars.prefix(starEmoji.count))
+        let stars: [ UIImageView ] = Array(self.stars.prefix(starEmoji?.count ?? 5))
         let stackView: UIStackView = .init(arrangedSubviews: stars)
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.distribution = .fillEqually
@@ -111,7 +111,7 @@ public class FiveStarEmoji: UIView {
             } else if i > starImageTag {
                 imageView.image = starUnselected
             } else {
-                imageView.image = starEmoji.prefix(5)[i]
+                imageView.image = starEmoji?.prefix(5)[i] ?? starSelected
                 starRating = i + 1
             }
         }
