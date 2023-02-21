@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5A256D9029A489B900897C99 /* FiveStarEmoji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiveStarEmoji.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A256D9029A489B900897C99 /* FiveStarEmoji-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FiveStarEmoji-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A256D9329A489B900897C99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A256D9729A489B900897C99 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5A256D9A29A489B900897C99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,7 +38,7 @@
 		5A256D8729A489B900897C99 = {
 			isa = PBXGroup;
 			children = (
-				5A256D9229A489B900897C99 /* FiveStarEmoji */,
+				5A256D9229A489B900897C99 /* FiveStarEmoji-Example */,
 				5A256D9129A489B900897C99 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,12 +46,12 @@
 		5A256D9129A489B900897C99 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5A256D9029A489B900897C99 /* FiveStarEmoji.app */,
+				5A256D9029A489B900897C99 /* FiveStarEmoji-Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5A256D9229A489B900897C99 /* FiveStarEmoji */ = {
+		5A256D9229A489B900897C99 /* FiveStarEmoji-Example */ = {
 			isa = PBXGroup;
 			children = (
 				5A256DA829A48DD600897C99 /* AppDelegate */,
@@ -59,7 +59,7 @@
 				5A256DAA29A48DFC00897C99 /* Storyboard */,
 				5A256DA729A48DCC00897C99 /* Global */,
 			);
-			path = FiveStarEmoji;
+			path = "FiveStarEmoji-Example";
 			sourceTree = "<group>";
 		};
 		5A256DA729A48DCC00897C99 /* Global */ = {
@@ -99,9 +99,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5A256D8F29A489B900897C99 /* FiveStarEmoji */ = {
+		5A256D8F29A489B900897C99 /* FiveStarEmoji-Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5A256DA429A489BB00897C99 /* Build configuration list for PBXNativeTarget "FiveStarEmoji" */;
+			buildConfigurationList = 5A256DA429A489BB00897C99 /* Build configuration list for PBXNativeTarget "FiveStarEmoji-Example" */;
 			buildPhases = (
 				5A256D8C29A489B900897C99 /* Sources */,
 				5A256D8D29A489B900897C99 /* Frameworks */,
@@ -111,9 +111,9 @@
 			);
 			dependencies = (
 			);
-			name = FiveStarEmoji;
+			name = "FiveStarEmoji-Example";
 			productName = FiveStarEmoji;
-			productReference = 5A256D9029A489B900897C99 /* FiveStarEmoji.app */;
+			productReference = 5A256D9029A489B900897C99 /* FiveStarEmoji-Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -131,7 +131,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5A256D8B29A489B900897C99 /* Build configuration list for PBXProject "FiveStarEmoji" */;
+			buildConfigurationList = 5A256D8B29A489B900897C99 /* Build configuration list for PBXProject "FiveStarEmoji-Example" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -144,7 +144,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5A256D8F29A489B900897C99 /* FiveStarEmoji */,
+				5A256D8F29A489B900897C99 /* FiveStarEmoji-Example */,
 			);
 		};
 /* End PBXProject section */
@@ -317,7 +317,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6CWF679Z8N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FiveStarEmoji/Global/Info.plist;
+				INFOPLIST_FILE = "FiveStarEmoji-Example/Global/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -346,7 +346,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6CWF679Z8N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FiveStarEmoji/Global/Info.plist;
+				INFOPLIST_FILE = "FiveStarEmoji-Example/Global/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -369,7 +369,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5A256D8B29A489B900897C99 /* Build configuration list for PBXProject "FiveStarEmoji" */ = {
+		5A256D8B29A489B900897C99 /* Build configuration list for PBXProject "FiveStarEmoji-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A256DA229A489BB00897C99 /* Debug */,
@@ -378,7 +378,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5A256DA429A489BB00897C99 /* Build configuration list for PBXNativeTarget "FiveStarEmoji" */ = {
+		5A256DA429A489BB00897C99 /* Build configuration list for PBXNativeTarget "FiveStarEmoji-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A256DA529A489BB00897C99 /* Debug */,
