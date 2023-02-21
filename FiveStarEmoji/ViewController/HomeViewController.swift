@@ -36,6 +36,7 @@ public class FiveStarEmoji: UIView {
                                               starImageView5 ]
     
     private lazy var baseStackView: UIStackView = {
+        let stars: [ UIImageView ] = Array(self.stars.prefix(starEmoji.count))
         let stackView: UIStackView = .init(arrangedSubviews: stars)
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.distribution = .fillEqually
