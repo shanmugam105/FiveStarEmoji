@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FiveStarEmoji: UIView {
+public class FiveStarEmoji: UIView {
     public var starEmoji: [UIImage]! {
         didSet {
             configureView()
@@ -105,13 +105,13 @@ class FiveStarEmoji: UIView {
     @objc func starTapped(sender: UITapGestureRecognizer)  {
         guard let starImageTag = sender.view?.tag else { return }
         stars.enumerated().forEach { i, imageView in
-            starRating = i
             if i < starImageTag {
                 imageView.image = starSelected
             } else if i > starImageTag {
                 imageView.image = starUnselected
             } else {
                 imageView.image = starEmoji.prefix(5)[i]
+                starRating = i + 1
             }
         }
     }
@@ -125,6 +125,10 @@ class HomeViewController: UIViewController {
         ratingsView.starEmoji = [ #imageLiteral(resourceName: "star-1"), #imageLiteral(resourceName: "star-2"), #imageLiteral(resourceName: "star-3"), #imageLiteral(resourceName: "star-4"), #imageLiteral(resourceName: "star-5") ]
         ratingsView.starSelected = #imageLiteral(resourceName: "star-selected")
         ratingsView.starUnselected = #imageLiteral(resourceName: "star-unselected")
+    }
+    
+    @IBAction func rateNowTapped(_ sender: Any) {
+        print(ratingsView.starRating)
     }
 }
 
