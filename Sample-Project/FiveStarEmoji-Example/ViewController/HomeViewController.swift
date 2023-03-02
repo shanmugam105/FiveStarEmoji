@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import 
+import FiveStarEmoji
 
 class HomeViewController: UIViewController {
 
