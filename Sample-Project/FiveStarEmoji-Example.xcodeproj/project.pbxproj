@@ -12,11 +12,10 @@
 		5A256D9B29A489B900897C99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A256D9929A489B900897C99 /* Main.storyboard */; };
 		5A256D9D29A489BB00897C99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A256D9C29A489BB00897C99 /* Assets.xcassets */; };
 		5A256DA029A489BB00897C99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A256D9E29A489BB00897C99 /* LaunchScreen.storyboard */; };
-		5A256DAE29A4F56700897C99 /* FiveStarEmoji in Resources */ = {isa = PBXBuildFile; fileRef = 5A256DAD29A4F56600897C99 /* FiveStarEmoji */; };
-		5A256DB129A4F57200897C99 /* FiveStarEmoji in Frameworks */ = {isa = PBXBuildFile; productRef = 5A256DB029A4F57200897C99 /* FiveStarEmoji */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A0DC32229B09EF200851D2B /* FiveStarEmoji-Example */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "FiveStarEmoji-Example"; path = ..; sourceTree = "<group>"; };
 		5A256D9029A489B900897C99 /* FiveStarEmoji-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FiveStarEmoji-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A256D9329A489B900897C99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A256D9729A489B900897C99 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -24,7 +23,6 @@
 		5A256D9C29A489BB00897C99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A256D9F29A489BB00897C99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A256DA129A489BB00897C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A256DAD29A4F56600897C99 /* FiveStarEmoji */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FiveStarEmoji; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +30,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A256DB129A4F57200897C99 /* FiveStarEmoji in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A0DC32129B09EF200851D2B /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				5A0DC32229B09EF200851D2B /* FiveStarEmoji-Example */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		5A256D8729A489B900897C99 = {
 			isa = PBXGroup;
 			children = (
-				5A256DAD29A4F56600897C99 /* FiveStarEmoji */,
+				5A0DC32129B09EF200851D2B /* Packages */,
 				5A256D9229A489B900897C99 /* FiveStarEmoji-Example */,
 				5A256D9129A489B900897C99 /* Products */,
 				5A256DAF29A4F57200897C99 /* Frameworks */,
@@ -126,7 +131,6 @@
 			);
 			name = "FiveStarEmoji-Example";
 			packageProductDependencies = (
-				5A256DB029A4F57200897C99 /* FiveStarEmoji */,
 			);
 			productName = FiveStarEmoji;
 			productReference = 5A256D9029A489B900897C99 /* FiveStarEmoji-Example.app */;
@@ -171,7 +175,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A256DA029A489BB00897C99 /* LaunchScreen.storyboard in Resources */,
-				5A256DAE29A4F56700897C99 /* FiveStarEmoji in Resources */,
 				5A256D9D29A489BB00897C99 /* Assets.xcassets in Resources */,
 				5A256D9B29A489B900897C99 /* Main.storyboard in Resources */,
 			);
@@ -401,13 +404,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		5A256DB029A4F57200897C99 /* FiveStarEmoji */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = FiveStarEmoji;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5A256D8829A489B900897C99 /* Project object */;
 }
